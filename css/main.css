@@ -45,12 +45,13 @@ body, html, img {
 
 .header {
   display: flex;
-  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
-.header h1 {
-  padding: 0;
-  align-content: space-between;
+nav {
+  display: flex;
 }
 
 li {
