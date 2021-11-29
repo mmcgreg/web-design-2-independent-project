@@ -8,21 +8,23 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 body, html, img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
 /* The hero image */
 .hero-image {
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(231,231,231,0.4744897959183674) 50%, rgba(255,255,255,1) 100%);
-
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding: 0;
 }
 
 /* Place text in the middle of the image */
@@ -35,15 +37,8 @@ body, html, img {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  font-size: 25px;
 }
 
-.hero-text p, h1 {
-  margin: 5%;
-  font-weight: bold;
-  color: black;
-  opacity: 1;
-}
 
 /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-beers.jpg"); */
