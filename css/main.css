@@ -30,7 +30,7 @@ img {
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: .5fr 2.5fr .2fr;
+  grid-template-rows: .2fr 2.5fr .2fr;
   gap: 0;
   grid-template-areas:
     "banner"
