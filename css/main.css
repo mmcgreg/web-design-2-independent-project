@@ -31,3 +31,19 @@ img {
 .skip-links a:focus {
   top: 0;
 }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "main"
+    "div"
+    "footer";
+}
+
+footer {
+  display: grid;
+  grid-area: footer;
+}
