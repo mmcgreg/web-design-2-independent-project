@@ -32,11 +32,24 @@ img {
   top: 0;
 }
 
+nav a:hover {
+  background-color: white;
+}
+
+nav a {
+  text-decoration: none;
+
+  padding: .2em .5em;
+  background-color: orange;
+  border: 2px solid #f2f2f2;
+  border-radius: 6px;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 0.2fr;
-  gap: 0px 0px;
+  grid-template-rows: .5fr 1fr .2fr;
+  gap: 0;
   grid-template-areas:
     "main"
     "div"
