@@ -102,16 +102,16 @@ nav {
   grid
 }
 
-li {
-  display: block;
-  padding: 0;
-  list-style: none;
-  margin: 0;
-}
-
 ul {
   margin-bottom: 1rem;
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  grid-area: nav;
+
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .mission {
