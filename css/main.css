@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 body,
@@ -19,4 +19,15 @@ img {
   height: auto;
   width: 100%;
   margin: 0;
+}
+
+.skip-links {
+  position: absolute;
+  top: -5em;
+  background-color: #fff;
+  color: #e5e5e5;
+}
+
+.skip-links a:focus {
+  top: 0;
 }
