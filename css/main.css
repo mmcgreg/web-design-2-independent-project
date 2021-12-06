@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 *,
@@ -9,66 +9,14 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #E5E5E5;
+}
+
 body,
 main,
 img {
   height: auto;
   width: 100%;
-}
-
-
-
-
-
-
-
-
-
-/*img {
-  height: auto;
-  width: 100%;
-}
-
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 0.8fr 1fr 0.3fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "header"
-    "banner"
-    "main"
-    "footer";
-}
-
-
-
-.hero-image {
-    display: grid;
-    grid-are: banner;
-    width: 100%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin: inherit;
-
-  background: #ccc;
-  background-image: url("../images/hero-beers.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-
-}
-
-main {
-  display: grid;
-  grid-area: main;
-}
-
-.footer {
-
-  grid-area: footer;
+  margin: 0;
 }
