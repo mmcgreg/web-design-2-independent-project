@@ -43,10 +43,15 @@ body {
   background-color: #e5e5e5;
 }
 
+.top-img {
+  padding: 1rem;
+}
+
 nav ul {
   list-style-type: none;
   margin: 1rem;
   padding: 1rem;
+  color: black;
 
   display: flex;
   justify-content: space-around;
@@ -55,33 +60,40 @@ nav ul {
 }
 
 nav a:hover {
-  background-color: white;
+  background-color: #e5e5e5;
 }
 
 nav a {
   text-decoration: none;
 
   padding: .2em .5em;
-  background-color: orange;
+  background-color: #feb62b;
   border: 2px solid #b75f44;
   border-radius: 6px;
 }
 
 .hero-text {
+  border: solid orange;
+  border-width: medium;
+  width: 85%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.hero-text h1 {
   text-align: center;
-  border: 2px solid orange;
 }
 
 .mission {
-    text-align: center;
+  text-align: center;
 }
 
 .about h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .bios h2 {
-    text-align: center;
+  text-align: center;
 }
 
 footer {
