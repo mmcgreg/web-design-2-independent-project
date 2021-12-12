@@ -98,62 +98,100 @@ nav a {
   text-align: center;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-}
-
 .container {
-  padding: 0 16px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.title {
-  font-size: 1.5rem;
-}
-
-.container h2, p {
+.card-header {
+  font-size: 2rem;
+  font-weight: normal;
   text-align: center;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #feb62b;
-  text-align: center;
-  cursor: crosshair;
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #fff;
+  padding: .8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: normal;
+  display: block;
   width: 100%;
+  cursor: crosshair;
+  border: 1px solid rgba(255, 255, 255, .2);
+  background: transparent;
 }
 
-.button:hover {
-  background-color: #b75f44;
+.btn:hover {
+  background-color: rgba(255, 255, 255, .12);
 }
 
-@media screen and (min-width: 50em) {
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .column-main {
-    margin: 0 auto;
-    float: none;
-    margin-bottom: 10px;
-    width: 75%;
+.cards-item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+
+  .cards-item {
+    width: 50%;
   }
 
-  .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+}
+
+@media (min-width: 56rem) {
+
+  .cards-item {
+    width: 33.3333%;
   }
 
-  .card {
-    max-height: 600px;
-  }
+}
 
-  .container h2, p {
-    text-align: left;
-  }
+.card {
+  background-color: white;
+  border-radius: .25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, .25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
+.card-content {
+  padding: 1rem;
+  background: linear-gradient(to top, #b75f44 40%, #feb62b 100%);
+  flex-direction: column;
+}
+
+.card-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.card-text {
+  color: #fff;
+  font-size: .875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: normal;
 }
 
 footer {
