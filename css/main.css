@@ -50,11 +50,14 @@ body {
 
 .top-img {
   padding: 1rem;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 1rem;
+  margin: 0;
   padding: 1rem;
   color: black;
   font-size: 1.5rem;
@@ -90,10 +93,31 @@ nav a {
 
 .mission {
   text-align: center;
+  border-radius: .25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, .25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: linear-gradient(to top, #b75f44 5%, #feb62b 100%);
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.about {
+  text-align: center;
+  border-radius: .25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, .25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: linear-gradient(to top, #b75f44 5%, #feb62b 100%);
+  padding: 1rem;
+  margin: 2rem;
 }
 
 .about h2 {
   text-align: center;
+  font-size: 2rem;
 }
 
 .bios h2 {
@@ -142,6 +166,10 @@ img {
 
 @media (min-width: 40rem) {
 
+  .top-img {
+    padding: 1rem;
+  }
+
   .cards-item {
     width: 50%;
   }
@@ -164,39 +192,98 @@ img {
     overflow: hidden;
 
     padding: 1rem;
-    background: linear-gradient(to top, #b75f44 5%, #feb62b 100%);
     margin: 2rem;
+  }
+
+  .about {
+    background-color: white;
+    border-radius: .25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, .25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  .about p {
+    margin: 1rem 5rem;
   }
 
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 50rem) {
 
   .cards-item {
     width: 33.3333%;
   }
 
-  nav ul {
-    font-size: 3rem;
+  .about p {
+    margin: 1rem 5rem;
   }
 
-  .banner {
-    padding: 5rem;
+  nav a {
+    white-space: nowrap;
+    font-size: 1.5rem;
+    align-content: center;
   }
 
 }
 
-.mission {
-  background-color: white;
-  border-radius: .25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, .25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+@media (min-width: 75rem) {
 
-  padding: 1rem;
-  background: linear-gradient(to top, #b75f44 5%, #feb62b 100%);
-  margin: 2rem;
+  .about p {
+    margin: 1rem 9rem;
+  }
+
+  .mission {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .banner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+  }
+
+  ul li {
+    display: inline;
+    padding-left: 6rem;
+
+    text-align: center;
+  }
+
+  .top-img {
+    width: 100%;
+  }
+
+  .about {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .menu {
+    align-items: center;
+    height: auto;
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 156.25rem) {
+
+  .mission {
+    max-width: 1020px;
+    margin: auto;
+  }
+
+  .about p {
+    font-size: 2rem;
+    margin: 1rem 40rem;
+  }
+
 }
 
 .cards {
